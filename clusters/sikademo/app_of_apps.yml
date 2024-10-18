@@ -17,7 +17,7 @@ spec:
     syncOptions:
       - CreateNamespace=true
   source:
-    repoURL: https://github.com/sika-training-examples/2024-10-18_integritty-argocd-apps-example.git
+    repoURL: https://gitlab.sikalabs.com/examples/integritty/argocd-apps.git
     path: apps/sikademo
     targetRevision: master
     directory:
