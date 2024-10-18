@@ -1,0 +1,16 @@
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: pull-secret
+  namespace: example
+spec:
+  encryptedData:
+    .dockerconfigjson: AgAE3LeXZ+N4QSxi1wMN2blgD2McU/nLAU7WuNpIH/Zhby8/HpBR7oLa0yWCVRA7bAc5K3vUhad+ZiY/+yirV83CMznVgD5jM/SoqSGcC21dFK7HKWPo7NjHNoTg7uooEC2lZ9HTgSELUmmdgnYiw+08qmyrsXmD0E+0W6fv1NYdiQSBe7Rn//Oa81Vs1IjtPZYI+M/E1ukaKP0tzgBHi2J901PAMeqD2rVnkZQDQ5jHVR5+RN1wOvEdJKE4NeajUc4Lh6ttTTe2BJMg0IZv3Egv1VvF9nMdC6ohESQcR3s8GOD6zPAs8/4P/7k4LnmkRbsC7uq+aWWcfW0Bxse8Fx2Ax+5NuWLYNH6d/+YlOWMoWiIbdboeudhBAdTKlX9CaelzT9aAJPF4Hy1dt5oSO4IFJxBWXxwNpokJvPAHjV7L0u7inCJ6BNxW52d297qquZ/wZ6ZadhNkMtjjvuwPZGQc9FmFmTMkfL1TM3HJqoYLofH4xF+aetbPF38XLflT9rTw3+8W7rHigWVmLkcjdGWop4p2bKX+aC4KAzL47H6AS+kDD3yiHFLtKtYLFFryDtelA/lSzOU1CKc0JRxoAYwfhkeZLW255awXJbfjd5LJRXvSi9xRuTfLh4/QOVHamHU2qN820fA/sVgxrnTm3cHiixxjDISPAB4GZpQVS4gxr4yjpMVRFDJf4vFiGKHd+R4p7xeZmNt1AW5UY94Ta3Kitaf4GKTcqf/XOgbyEz7NXyyFySzBuZSPEelkdgoCzyY5kzHIIfKcWOgIOZYPHDNvD9JeWd/E9YxE/R/Ek0jNUGJXy8TURG/2T1z6PwRGl9YO6MdBjA==
+  template:
+    metadata:
+      creationTimestamp: null
+      name: pull-secret
+      namespace: example
+    type: kubernetes.io/dockerconfigjson
