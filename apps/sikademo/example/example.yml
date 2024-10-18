@@ -21,5 +21,5 @@ spec:
     path: ./integritty-php
     helm:
       valuesObject:
-        image: ttl.sh/integritty-counter
+        image: registry.sikalabs.com/examples/integritty/example-app:master-54f5e454-64493
         host: integritty-php.k8s.sikademo.com
