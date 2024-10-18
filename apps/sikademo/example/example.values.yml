@@ -1,0 +1,2 @@
+host: integritty-php.k8s.sikademo.com
+imagePullSecret: pull-secret

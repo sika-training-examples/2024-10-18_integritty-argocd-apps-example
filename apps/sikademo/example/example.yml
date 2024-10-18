@@ -16,11 +16,12 @@ spec:
       selfHeal: true
     syncOptions:
       - CreateNamespace=true
-  source:
-    repoURL: https://github.com/sika-training-examples/2024-10-18_integritty-charts.git
-    path: ./integritty-php
-    helm:
-      valuesObject:
-        image: registry.sikalabs.com/examples/integritty/example-app:master-54f5e454-64493
-        host: integritty-php.k8s.sikademo.com
-        imagePullSecret: pull-secret
+  sources:
+    - repoURL: https://github.com/sika-training-examples/2024-10-18_integritty-charts.git
+      path: ./integritty-php
+      helm:
+        valueFiles:
+          - $values/apps/sikademo/example/example.values.yml
+          - $values/apps/sikademo/example/example.image.values.yml
+    - repoURL: https://gitlab.sikalabs.com/examples/integritty/argocd-apps.git
+      ref: values
